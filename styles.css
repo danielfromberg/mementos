@@ -126,3 +126,11 @@ body, html {
 
                         input[type=checkbox]:checked ~ #playlist {
                             display: block;}
+
+
+
+
+                          ::selection {
+                            background-color: black;
+                            color: white;
+                            }
