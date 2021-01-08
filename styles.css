@@ -45,9 +45,17 @@ body, html {
         }
 
 
-        footer {
-            margin-top: -180px;
-            padding-bottom: 20px;
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: transparent;
+          text-align: right;
+        }
+
+        .footer a {
+          margin-right: 10px;
         }
 
     @media (max-width: 600px) {
@@ -68,9 +76,6 @@ body, html {
         overflow-x: hide;
         }
 
-        footer {
-          margin-top: 0;
-        }
     }
 
                 #ul {
