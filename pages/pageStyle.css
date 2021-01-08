@@ -24,6 +24,8 @@ margin-left: 0;
 
 #two {
 background-image: linear-gradient(#fcff28 0%, white 250px);
+padding-left: 10px;
+padding-right: 10px;
 
 
 }
@@ -39,8 +41,9 @@ background-image: linear-gradient(#fcff28 0%, white 250px);
     }
 
     #two {
-        width: 100vw;
-        padding-left: 0;
+        width: calc(100vw - 20px);
+        padding-left: 10px;
+        padding-right: 10px;
         min-height: calc(100vh - 100px)
 
     }
