@@ -1,52 +1,59 @@
 html, body {
 
-background-repeat: none;
-background-size: cover;
-height: 100%;
-min-height: 100%;
-width: 100%;
-margin: 0;
-background-image: linear-gradient(red, blue, green);
-position: fixed;
-overflow-y: scroll;
-overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(red, blue, green);
+  position: fixed;
+  overflow-y: scroll;
+
 }
 
-#parent {
+.parent {
 padding: 0;
+width: 680px;
+margin-left: calc(50vw - 340px);
+margin-right: calc(50vw - 340px);
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+}
+#heading {
 width: 100%;
-display: grid;
-grid-template-columns: 12.5vw 75vw 12.5vw;
-margin-left: 0;
-
-
+height: 100px;
+margin: 0;
 }
 
-#two {
-background-image: linear-gradient(#fcff28 0%, white 250px);
-padding-left: 10px;
-padding-right: 10px;
+#main {
+  background-image: linear-gradient(#fcff28 0%, white 250px);
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  min-height: calc(100vh - 100px);
+  }
 
 
-}
+.footer {
+  background-color: white;
+  width: 680px;
+  margin-left: calc(50vw - 340px);
+  margin-right: calc(50vw - 340px);
+  background-image: linear-gradient(white 0%, gray 70%);
+  }
 
-@media (max-width: 600px) {
-    #parent {
-    display: block;
-    width: 100vw;
-    }
 
-    #one {
-    display: none;
-    }
+@media (max-width: 680px) {
+  .parent {
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  }
 
-    #two {
-        width: calc(100vw - 20px);
-        padding-left: 10px;
-        padding-right: 10px;
-        min-height: calc(100vh - 100px)
-
-    }
+  .footer {
+  width: 100%;
+  margin: 0;
+  }
     }
 
             #biolink {
@@ -61,7 +68,7 @@ padding-right: 10px;
 
             input[type=checkbox] {
                 position: absolute;
-                top: -9999px;
+                top: 99999px;
                 left: -9999px;
             }
             label {
@@ -85,20 +92,8 @@ padding-right: 10px;
                 display: block;}
 
 
-video {
-  display: block;
-margin: 0 auto;
-    width: 100%;
-    max-width: 520px;
-    height: 100%;
-    max-height: calc(100vh - 250px);
 
-}
 
-#owensong {
-    margin-left: calc(50% - 175px);
-    margin-right: calc(50% - 175px);
-}
 
 
 

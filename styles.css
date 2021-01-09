@@ -18,9 +18,7 @@ body, html {
     width: 100%;
     margin: 0;
     background-image: linear-gradient( #fcff28 150px, rgb(255, 95, 122) 41%, rgb(7, 255, 7) 66%);
-    overflow-y: visible;
     overflow-x: hidden;
-
     }
 
     #heading {
@@ -36,7 +34,7 @@ body, html {
 
     #parent {
         padding-top: 50px;
-        height: 100%;
+        height: calc(100% - 150px);
         width: 100%;
         display: grid;
         grid-template-columns: 42% 40%;
@@ -46,22 +44,23 @@ body, html {
 
 
         .footer {
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background-color: transparent;
-          text-align: right;
-        }
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: right;
+          }
 
-        .footer a {
-          margin-right: 10px;
-        }
+          .footer a {
+            padding-right: 10px;
+          }
 
-    @media (max-width: 600px) {
+
+    @media (max-width: 680px) {
         #heading {
             margin: 0;
-            width: 100%;
+            width: 75%;
+            margin-left: 20px;
+            margin-right: 5%;
             display: block;
         }
 
@@ -72,12 +71,9 @@ body, html {
         display: grid;
         grid-template-columns: 1fr;
         height: calc(100vh - 100px);
-        overflow-y: hide;
-        overflow-x: hide;
         }
 
     }
-
                 #ul {
                     list-style-type: square;
                 }
@@ -92,16 +88,17 @@ body, html {
                     font-size: 1.2em;
                 }
 
-        #genre1, #genre3 {
-            margin: 0;
-        }
-        #genre2 {
-            margin-top: 15vw;
-        }
-        #genre4 {
+
+        #genre2, #genre4 {
             margin-top: 15vw;
         }
 
+
+#one, #two {
+
+  margin-right: 50px;
+    height: max-content;
+}
                         #playlistlink {
                             color: blue;
                             text-decoration: underline;
@@ -109,7 +106,7 @@ body, html {
 
                         input[type=checkbox] {
                             position: absolute;
-                            top: -9999px;
+                            top: 99999px;
                             left: -9999px;
                         }
                         label {
