@@ -44,8 +44,7 @@ body, html {
 
 
         .footer {
-            left: 0;
-            bottom: 0;
+  flex-shrink: 0;
             width: 100%;
             text-align: right;
           }
@@ -107,9 +106,17 @@ body, html {
 
                         input[type=checkbox] {
                             position: absolute;
-                            bottom: 0px;
+                            top: 9999px;
                             left: -9999px;
                         }
+
+                        @-moz-document url-prefix() {
+                          input[type=checkbox] {
+                            bottom: 0;
+                            top: 0;
+                          }
+                        }
+
                         label {
                         -webkit-appearance: push-button;
                         -moz-appearance: button;
@@ -151,8 +158,12 @@ a:active {
 
 
 
-@media (max-height: 275px) {
-body {
+/*
 background-image: linear-gradient( #fcff28 0%, cyan 100%);
 filter: invert(1);
+}
+*/
+
+#night {
+  display: none;
 }
