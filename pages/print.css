@@ -1,0 +1,17 @@
+.footer {
+  display: none;
+}
+
+
+  #main {
+    display:block;
+    width:620px;
+    padding:1em;
+  }
+
+
+  #main {
+    display:inline;
+    width:100%;
+    padding: 0;
+  }
