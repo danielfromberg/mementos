@@ -111,3 +111,8 @@ line-height: 1.5;
 text-align: center;
 font-size: 3em;
 }
+
+.stanza {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
