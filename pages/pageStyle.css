@@ -97,4 +97,6 @@ font-size: 3em;
 .stanza, .hangingindent {
   padding-left: 22px ;
   text-indent: -22px ;
+  padding-left: 10px;
+  padding-right: 10px;
 }
