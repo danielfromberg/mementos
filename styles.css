@@ -150,32 +150,7 @@ body, html {
                             background-color: black;
                             color: white;
                             }
-
-
-/* unvisited link */
-a:link {
-}
-
-/* visited link */
-a:visited {
-}
-
-/* mouse over link */
-a:hover {
-}
-
-/* selected link */
-a:active {
-}
-
-
-
-/*
-background-image: linear-gradient( #fcff28 0%, cyan 100%);
-filter: invert(1);
-}
-*/
-
+                            
 #night {
   display: none;
 }
