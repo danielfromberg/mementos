@@ -78,6 +78,9 @@ body, html {
         .footer a {
           padding-right: 40px;
         }
+#one {
+        padding-bottom: 60px;
+      }
 
     }
                 #ul {
@@ -106,6 +109,7 @@ body, html {
     height: max-content;
     line-height: 1.3;
   }
+
                         #playlistlink {
                             color: blue;
                             text-decoration: underline;
@@ -146,6 +150,7 @@ body, html {
                             background-color: black;
                             color: white;
                             }
+
 
 /* unvisited link */
 a:link {
