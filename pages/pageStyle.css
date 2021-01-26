@@ -2,7 +2,7 @@ html, body {
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(red, blue, green);
+  background-image: linear-gradient(black, gray);
   position: fixed;
   overflow-y: scroll;
 
@@ -100,3 +100,21 @@ font-size: 3em;
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+audio::-webkit-media-controls-panel {background-image: linear-gradient(white, black);}
+audio::-webkit-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
+}
+audio::-webkit-media-controls-current-time-display {color: pink;}
+audio::-webkit-media-controls-time-remaining-display {color: white;}
+audio::-webkit-media-controls-rewind-button {background-color: gray;}
+
+ #audio {
+
+  height: 54px;
+  width: 300px;
+  margin-left: calc(50% - 150px);
+  margin-right: calc(50% - 150px);
+ }
