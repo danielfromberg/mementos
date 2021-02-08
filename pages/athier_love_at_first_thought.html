@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="multimedia.css">
+    <link rel="image_src" href="../phonto_1.JPG">
+    <link rel=“stylesheet” href=“print.css” type=“text/css” media=“print”>
+    <title>Mementos</title>
+    <style>
+
+      #main {
+        background-image: linear-gradient(#515151 0%,#ff00f7 50px);
+      }
+
+      @font-face {
+        font-family: wingdings;
+        src: url(wingding.ttf);
+      }
+      #biolink {
+color: #00ff00;
+}
+
+
+#titles {
+
+  color: #00ff00;
+}
+
+#bio {
+  color:black;
+}
+
+
+audio::-webkit-media-controls-panel {background-image: linear-gradient(black, magenta);}
+audio::-webkit-media-controls-mute-button {
+  margin-top: 10px;
+  height: 10px;
+}
+
+audio::-webkit-media-controls-current-time-display {color: white;}
+audio::-webkit-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-mute-button {
+  margin-top: 10px;
+  height: px;
+}
+@-moz-document url-prefix() {
+#audioPlayer {
+    background-image: radial-gradient(navy 50px, #ff00f7 175px);
+    padding: 25px;
+}
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="parent">
+      <a href="../index.html"><div id="heading"></div></a>
+    <div id="main">
+        <a href="../index.html" id="back2">Back</a>
+        <br>
+        <br>
+        <br>
+        <h2 id="titles">Love at First Thought</h2>
+        <h3 id="titles">By athier</h3>
+        <br><br><br>
+        <p></p>
+        <br>
+        <p></p>
+        <div style="top: 0px; left: 0px;">
+          <audio id="audioPlayer" controls autoplay src="media/Love%20at%20First%20Thought.wav"></audio>
+        </div>
+
+<label for="toggle-1"><p id="biolink">Bio</p>
+</label>
+<input type="checkbox" id="toggle-1">
+<div id="bio">
+    <p>
+      emmanuel martinez (athier) is a chicago based musician/engineering student who is exceedingly well versed in bs-ing.     <br>
+“you’re in your mind all day. make sure it’s a nice place to be!”   <br>
+for more indie music ran through the oriental/hispanic filter, you can find him at: <a href="https://soundcloud.app.goo.gl/TPtfjT6wt4fjWusV8">https://soundcloud.app.goo.gl/TPtfjT6wt4fjWusV8</a>
+ </div>
+<br><br>
+
+
+    </div>
+
+</div>
+ 
+<div class="footer">
+    <a href="about.html">About</a>
+  </div>
+
+
+</body>
+</html>

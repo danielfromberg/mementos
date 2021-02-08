@@ -13,3 +13,26 @@
     height: 100%;
 
 }
+
+#vid video {
+  display: block;
+  margin: 0 auto;
+    width: 100%;
+    max-width: 620px;
+    height: 100%;
+
+}
+
+#vid {
+  background-image: radial-gradient(black 1%, transparent 100%);
+  padding: 10px;
+}
+
+
+#audioPlayer {
+  width: 100%;
+  max-width: calc(100% - 50px);
+  margin: 0;
+  padding: 25px;
+  }
+  

@@ -1,0 +1,7 @@
+@media print { 
+div {page-break-inside: always;}
+}
+
+@page {
+    margin: 0.5cm;
+}
