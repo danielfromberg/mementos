@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel=“style sheet.” href=“pages/print.css” type=“text/css” media=“print”>
+<style>
+    h2 {
+        color: magenta;
+    }
+</style>
 </head>
 <body>
 
@@ -19,25 +24,28 @@
 <body>
 
     <a href="index.html"><div id="heading"></div></a>
+    
     <div id="parent">
-
         <div id="one">
             <h2 id="genre3">Film</h2>
             <ul>
                 <li>
-                    <a href="pages/ben_giles_two_shorts.html">Ben Giles - Two Shorts</a>
+                    <a class="new" href="pages/ben_giles_two_shorts.html">Ben Giles - Two Shorts</a>
                 </li>
                 <li>
+                    <a class="new" href="pages/julius_jefferson_issy_bottger_i_live.html">Issy Bottger & Julius Jefferson - I Live</a>
+                </li>
+                <li >
                     <a href="pages/nick_alonzo_the_ipod.html">Nick Alonzo - The iPod</a>
                 </li>
                 </ul>
             <h2 id="genre4">Music</h2>
             <ul>
-                <li>
-                    <a href="pages/soapsan_five_songs.html">SOAPSAN - Five Songs</a>
+                <li id="new" >
+                    <a class="new" href="pages/isosceles_kramer_banjo_beach.html">Iscoceles Kramer - Banjo Beach</a>
                 </li>
                 <li>
-                    <a href="pages/isosceles_kramer_banjo_beach.html">Iscoceles Kramer - Banjo Beach</a>
+                    <a class="new" href="pages/athier_love_at_first_thought.html">athier - Love at First Thought</a>
                 </li>
                 <li>   
                     <a href="pages/owen_frankel_sonic_expearmint.html">Owen H. Frankel - Sonic Expearment</a>
@@ -52,6 +60,12 @@
         <div id="two">
             <h2 id="genre1">Poetry</h2>
             <ul>
+                <li>
+                    <a class="new" href="pages/jessie_mccarty_enhancing_lyric.html">Jessie McCarty - Enhancing Lyric</a>
+                </li>
+                <li>
+                    <a class="new" href="pages/addison_pozzi_armchair_psychology.html">Addison Pozzi - Armchair Psychology</a>
+                </li>
               <li>
               <a href="pages/maddy_ipema_every_nightmare_i_have.html">Maddy Ipema - "Every nightmare I have starts out as a dream"</a>
             </li>
@@ -78,35 +92,35 @@
             </label>
             <input type="checkbox" id="toggle-1">
             <div id="playlist">
-                <iframe src="https://open.spotify.com/embed/playlist/1DnfKPJ1qGI6G1pjJhAKYX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/07ol0V1rEnVdnO7OzI5eJS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         </div>
 
 
 
 
-    </div>
+
         <div class="footer">
-          <a href="pages/about.html">About</a><div><a id="night" href="#invert">Night shift</a></div>
+          <a href="pages/about.html">About</a><div id="night"><a id="night" href="#invert">Night shift</a></div>
         </div>
     </div>
 
 <script type="text/javascript">
 
 
-var square = document.getElementsByTagName("body"),
-    clickMe = document.getElementById("night"); //Keeping it unobstrusive
+var square = document.getElementsByTagName("body");
+var clickMe = document.getElementById("night"); //Keeping it unobstrusive
 function doDemo () {
 
   var button = this;
-  square.style.filter = "invert(1.0)";
+  square.style.filter = "invert(1)";
   button.setAttribute("disabled", "true");
   setTimeout(clearDemo, 2000, button);
 }
 
 function clearDemo (button) {
   var square = document.getElementById("square");
-  square.style.filter = "invert(0.0)";
+  square.style.filter = "invert(0)";
   button.removeAttribute("disabled");
 }
 

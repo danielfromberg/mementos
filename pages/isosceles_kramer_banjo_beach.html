@@ -12,24 +12,42 @@
     <style>
 
       #main {
-        background-image: linear-gradient(#fcff28 0%, #0000ff 20% , #730099 90%);
+        background-image: linear-gradient(black 0%, #0000ff 20% , #730099 90%);
       }
 
-      @font-face {
-        font-family: wingdings;
-        src: url(wingding.ttf);
-      }
-      #biolink {
-color: cyan;
+    #heading {
+    background-color: #fcff28;
+    background-image: url('../headercrop5%20copy.png');
+
+    }
+
+
+audio::-webkit-media-controls-panel {background-image: linear-gradient(blue, white);}
+audio::-webkit-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
 }
 
-#main p {
-  color: #00ffff;
+audio::-webkit-media-controls-current-time-display {color: white;}
+audio::-webkit-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
 }
+audio::-moz-media-controls-current-time-display {color: white;}
+audio::-moz-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-play-button {background-color:red;  height: 10px; width: 4px; color: white;}
 
-#titles {
+
+#titles, #main p, #biolink {
 
   color: #00ff00;
+}
+@-moz-document url-prefix() {
+#audioPlayer {
+    background-image: linear-gradient( #730099, #0000ff);
+    padding: 25px;
+}
 }
 
     </style>
@@ -41,17 +59,20 @@ color: cyan;
     <div id="main">
         <a href="../index.html" id="back2">Back</a>
         <br>
+
         <br>
         <br>
         <h2 id="titles">Banjo Beach</h2>
         <h3 id="titles">By Isosceles Kramer</h3>
         <p></p>
         <br>
+        <br>
+        <br><br>
         <p></p>
-        <div id="audio" style="top: 0px; left: 0px;">
-          <audio id="audio" controls autoplay src="media/Banjo_Beach.wav"></audio>
+        <div style="top: 0px; left: 0px;">
+          <audio id="audioPlayer" controls autoplay src="https://c10.patreonusercontent.com/3/eyJhIjoxLCJwIjoxfQ%3D%3D/patreon-media/p/post/46844290/a49f5d474a384fe18f0d249cf7f7967f/1.wav?token-time=1612740690&token-hash=_kWlPE2-WJLtMnVbiH9rUdaj4e6g2x6Fr3QLzAG0OHY%3D"></audio>
         </div>
-
+       <br><br>
 <label for="toggle-1"><p id="biolink">Bio</p>
 </label>
 <input type="checkbox" id="toggle-1">

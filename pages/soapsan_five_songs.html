@@ -37,12 +37,17 @@
 
 #playlistControls {
     width: 100%;
-    color:red;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
+
+#DL {
+
+    justify-content: right;
+}
+
 
 
 audio::-webkit-media-controls-panel {background-image: linear-gradient(gray, black);}
@@ -78,6 +83,7 @@ body{margin: 0;}
 width: 100%;
 margin: 0;
 padding: 0;
+background-image: radial-gradient(green, black);
 }
 
 #audioPlayer {
@@ -118,17 +124,21 @@ justify-content: space-evenly;
           </audio>
 <br><br><br>
           <ul id="playlist" class="specialAudio">
-              <li><a href="media/MASTER%20CHIEF%20%20MFN%20MIX%201.mp3">MASTER CHIEF</a></li>
-              <li><a href="media/OPERATIONS.mp3">OPERATIONS</a></li>
-              <li><a href="media/WHAT%20IS%20MINE%20%20MFN%20MIX%201.mp3">WHAT IS MINE</a></li>
-              <li><a href="media/DIRTY%20FANTA%20(MASTERED).mp3">DIRTY FANTA</a></li>
-              <li><a href="media/CAPTAIN.mp3">CAPTAIN</a></li>
+              <li><a href="media/soapsan/MASTER%20CHIEF%20%20MFN%20MIX%201.mp3">MASTER CHIEF</a></li>
+              <li><a href="media/soapsan/OPERATIONS.mp3">OPERATIONS</a></li>
+              <li><a href="media/soapsan/WHAT%20IS%20MINE%20%20MFN%20MIX%201.mp3">WHAT IS MINE</a></li>
+              <li><a href="media/soapsan/DIRTY%20FANTA%20(MASTERED).mp3">DIRTY FANTA</a></li>
+              <li><a href="media/soapsan/CAPTAIN.mp3">CAPTAIN</a></li>
           </ul>
           <div id="playlistControls">
           <a href="#" onclick="playlist.prevTrack();">Prev Track</a>
           <a id="" href="#" onclick="playlist.nextTrack();">Next Track</a>
-                </div>
+               
             </div>
+        <div id="playlistControls">
+            <a  href="media/soapsan" >Download</a>
+        </div>
+        </div> 
             
           <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
           <script src="audioPlayer.js"></script>
