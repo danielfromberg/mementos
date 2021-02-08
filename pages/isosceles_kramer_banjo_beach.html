@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="multimedia.css">
+    <link rel="image_src" href="../phonto_1.JPG">
+    <link rel=“stylesheet” href=“print.css” type=“text/css” media=“print”>
+    <title>Mementos</title>
+    <style>
+
+      #main {
+        background-image: linear-gradient(black 0%, #0000ff 20% , #730099 90%);
+      }
+
+    #heading {
+    background-color: #fcff28;
+    background-image: url('../headercrop5%20copy.png');
+
+    }
+
+
+audio::-webkit-media-controls-panel {background-image: linear-gradient(blue, white);}
+audio::-webkit-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
+}
+
+audio::-webkit-media-controls-current-time-display {color: white;}
+audio::-webkit-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-mute-button {
+  margin-top: 10px;
+  height: 28px;
+}
+audio::-moz-media-controls-current-time-display {color: white;}
+audio::-moz-media-controls-time-remaining-display {color:white;}
+audio::-moz-media-controls-play-button {background-color:red;  height: 10px; width: 4px; color: white;}
+
+
+#titles, #main p, #biolink {
+
+  color: #00ff00;
+}
+@-moz-document url-prefix() {
+#audioPlayer {
+    background-image: linear-gradient( #730099, #0000ff);
+    padding: 25px;
+}
+}
+
+    </style>
+</head>
+<body>
+
+<div class="parent">
+      <a href="../index.html"><div id="heading"></div></a>
+    <div id="main">
+        <a href="../index.html" id="back2">Back</a>
+        <br>
+
+        <br>
+        <br>
+        <h2 id="titles">Banjo Beach</h2>
+        <h3 id="titles">By Isosceles Kramer</h3>
+        <p></p>
+        <br>
+        <br>
+        <br><br>
+        <p></p>
+        <div style="top: 0px; left: 0px;">
+          <audio id="audioPlayer" controls autoplay src="https://c10.patreonusercontent.com/3/eyJhIjoxLCJwIjoxfQ%3D%3D/patreon-media/p/post/46844290/a49f5d474a384fe18f0d249cf7f7967f/1.wav?token-time=1612843613&token-hash=HcnbPVUSIxXd1MTI1i-9JyFFpVgMk6nXHtE239rUv2E%3D"></audio>
+        </div>
+       <br><br>
+<label for="toggle-1"><p id="biolink">Bio</p>
+</label>
+<input type="checkbox" id="toggle-1">
+<div id="bio">
+    <p>
+      Isosceles Kramer is a musician, cartoonist, and inventor, also known as Will Wisniewski. They live and work in Chicago IL and are a student of the Art Institute of Chicago. Outside of their independent work as Isosceles Kramer, they play guitar/ synthesizers in the band Floatie.       </p>
+</div>
+<br><br>
+
+
+    </div>
+
+</div>
+ 
+<div class="footer">
+    <a href="about.html">About</a>
+  </div>
+
+
+</body>
+</html>
