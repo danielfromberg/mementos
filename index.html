@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="image_src" href="phonto_1.JPG" />
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <title>Mementos</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -27,30 +27,71 @@
 
     <div id="parent">
         <div id="one">
+          <h2 id="genre3">Music Videos</h2>
+          <ul>
+            <li>
+                <a class="new" href="pages/diana_starshine_uncultured_island.html">Diana Starshine @ UNCULTURED ISLAND (STROBE WARNING)</a>
+              </li>
+                <li>
+                    <a class="new" href="pages/omnia_sol_two.html">Omnia Sol - "Movies" & "Seasons Greetings"</a>
+                </li>
+              </ul>
+
+              <h2>Multimedia Poetry</h2>
+              <ul>
+                <li>
+                    <a class="new" href="pages/joshua_sauvageau_gorilla_sushi.html">Joshua Sauvageau - "A lonely undergrad wanders into Gorilla Sushi on a Friday night"</a>
+                  </li>
+                  </ul>
             <h2 id="genre3">Film</h2>
             <ul>
+              <li>
+                  <a class="new" href="pages/ben_medina_grim_sport.html">Ben Medina - Grim Sport</a>
+              </li>
                 <li>
-                    <a class="new" href="pages/ben_giles_two_shorts.html">Ben Giles - Two Shorts</a>
+                    <a href="pages/ben_giles_two_shorts.html">Ben Giles - Two Shorts</a>
                 </li>
                 <li>
-                    <a class="new" href="pages/julius_jefferson_issy_bottger_i_live.html">Issy Bottger & Julius Jefferson - I Live</a>
+                    <a href="pages/julius_jefferson_issy_bottger_i_live.html">Issy Bottger & Julius Jefferson - I Live</a>
                 </li>
                 <li >
                     <a href="pages/nick_alonzo_the_ipod.html">Nick Alonzo - The iPod</a>
                 </li>
                 </ul>
-            <h2 id="genre4">Songs</h2>
+                <h2 id="genre3">2D</h2>
+                <ul>
+                  <li>
+                          <a class="new" href="pages/gabriela_everett_drawings.html">Gabriela Everett - Three Drawings</a>
+                  </li>
+                  <li>
+                      <a class="new" href="pages/kaltra_seferi.html">Kaltra Seferi - Four Images</a>
+                    </li>
+
+                    </ul>
+
+
+            <h2 id="genre4">Music</h2>
             <ul>
-                <li id="new">
-                    <a class="new" href="pages/isosceles_kramer_banjo_beach.html">Iscoceles Kramer - Banjo Beach</a>
+              <li>
+                  <a class="new" href="pages/haze_lagoon_saturnian_freak.html">Haze Lagoon - Saturnian Freak</a>
+              </li>
+                <li>
+                    <a href="pages/isosceles_kramer_banjo_beach.html">Iscoceles Kramer - Banjo Beach</a>
                 </li>
                 <li>
-                    <a class="new" href="pages/athier_love_at_first_thought.html">athier - Love at First Thought</a>
+                    <a href="pages/athier_love_at_first_thought.html">athier - Love at First Thought</a>
                 </li>
                 <li>
                     <a href="pages/owen_frankel_sonic_expearmint.html">Owen H. Frankel - Sonic Expearment</a>
                 </li>
                 </ul>
+
+                <label for="toggle-1"><p id="playlistlink">Check out the playlist by the contributors and editors</p>
+                </label>
+                <input type="checkbox" id="toggle-1">
+                <div id="playlist">
+                    <iframe src="https://open.spotify.com/embed/playlist/7sKS0hWPuc0aHHZOGeRMxI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
 
     </div>
 
@@ -58,13 +99,32 @@
 
 
         <div id="two">
+
+
+                    <h2>Fiction</h2>
+                    <ul>
+                      <li>
+                          <a class="new" href="pages/julius_jefferson_studio_audience.html">Julius Jefferson - Studio Audience</a>
+                        </li>
+                        </ul>
+
+
+                            <h2>Screenplay Fiction</h2>
+                            <ul>
+                              <li>
+                                  <a class="new" href="pages/mario_anthony_the_reunion.html">Mario Anthony - "The Reunion"</a>
+                                </li>
+                                </ul>
+
+
+
             <h2 id="genre1">Poetry</h2>
             <ul>
                 <li>
-                    <a class="new" href="pages/jessie_mccarty_enhancing_lyric.html">Jessie McCarty - Enhancing Lyric</a>
+                    <a href="pages/jessie_mccarty_enhancing_lyric.html">Jessie McCarty - Enhancing Lyric</a>
                 </li>
                 <li>
-                    <a class="new" href="pages/addison_pozzi_armchair_psychology.html">Addison Pozzi - Armchair Psychology</a>
+                    <a href="pages/addison_pozzi_armchair_psychology.html">Addison Pozzi - Armchair Psychology</a>
                 </li>
               <li>
               <a href="pages/maddy_ipema_every_nightmare_i_have.html">Maddy Ipema - "Every nightmare I have starts out as a dream"</a>
@@ -88,12 +148,7 @@
                     <a href="pages/mulan_matthayasack_welcome_to_fabulous_las_vegas.html">Mulan Matthayasack - Welcome To Fabulous Las Vegas</a>
                 </li>
             </ul>
-            <label for="toggle-1"><p id="playlistlink">Check out the playlist by the contributors and editors</p>
-            </label>
-            <input type="checkbox" id="toggle-1">
-            <div id="playlist">
-                <iframe src="https://open.spotify.com/embed/playlist/07ol0V1rEnVdnO7OzI5eJS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
+
         </div>
 
 
@@ -106,8 +161,6 @@
     </div>
 
 <script type="text/javascript">
-
-
 var square = document.getElementsByTagName("body");
 var clickMe = document.getElementById("night"); //Keeping it unobstrusive
 function doDemo () {
@@ -117,13 +170,11 @@ function doDemo () {
   button.setAttribute("disabled", "true");
   setTimeout(clearDemo, 2000, button);
 }
-
 function clearDemo (button) {
   var square = document.getElementById("square");
   square.style.filter = "invert(0)";
   button.removeAttribute("disabled");
 }
-
 clickMe.onclick = doDemo; //Onclick call. Pass no arguments.
 </script>
 

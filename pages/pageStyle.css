@@ -1,7 +1,7 @@
 html, body {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(black, gray);
+  background-image:  linear-gradient(pink, yellow);
   position: fixed;
   overflow-y: none;
   filter: none;
@@ -17,11 +17,29 @@ flex-direction: column;
 justify-content: flex-start;
 
 }
+
+.wideparent {
+width: 80vw;
+}
+#widemain {
+  margin-left: calc(10vw);
+  margin-right: calc(10vw);
+}
+
+#widemain p {
+  margin-left: 66%;
+}
+#widemain img, iframe {
+  width: 100%;
+}
+
+
 #heading {
 width: 100%;
 height: 150px;
-margin: 0;  
+margin: 0;
 background-size: 100% 100%;
+background-image: url('mem3ntos_1.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 150%;
   font-size: .9em;
-  background-image: linear-gradient(#515151 0%, white 70px);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -67,6 +84,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0;
   }
+  .wideparent {
+  width: 100vw;
+  }
+  #widemain {
+    margin-left: calc(0vw);
+    margin-right: calc(0vw);
+  }
+  #widemain p {
+    margin-left: 10px;
+        margin-left: 10px;
+  }
+
     }
 
             #biolink {
@@ -124,8 +153,7 @@ font-size: 3em;
  }
 
  a:link { color: #005eff;
-  
+
  }
  a:visited { color: #005eff;
  }
-
